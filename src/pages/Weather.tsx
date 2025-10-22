@@ -583,7 +583,7 @@ function Weather() {
       {isPremium && forecast ? (
         <div className="bg-white rounded-lg sm:rounded-xl shadow-lg p-4 sm:p-6">
           <div className="flex flex-wrap items-center gap-2 mb-4 sm:mb-6">
-            <Calendar className="text-green-600" size={20} className="sm:w-6 sm:h-6" />
+            <Calendar size={20} className="text-green-600 sm:w-6 sm:h-6" />
             <h3 className="text-lg sm:text-xl font-semibold">{t('weather.premiumForecast')}</h3>
             <div className="flex items-center space-x-1 bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">
               <Crown size={10} className="sm:w-3 sm:h-3" />
@@ -629,7 +629,7 @@ function Weather() {
       ) : !isPremium ? (
         <div className="bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200 rounded-lg sm:rounded-xl p-4 sm:p-6">
           <div className="flex items-center space-x-2 sm:space-x-3 mb-4">
-            <Lock className="text-yellow-600" size={20} className="sm:w-6 sm:h-6" />
+            <Lock size={20} className="text-yellow-600 sm:w-6 sm:h-6" />
             <h3 className="text-lg sm:text-xl font-semibold text-yellow-800">{t('weather.premiumForecast')}</h3>
           </div>
           <p className="text-yellow-700 mb-4 text-sm sm:text-base">
