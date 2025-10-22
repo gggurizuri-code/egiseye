@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx vite",
-    "build": "npm run build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint \"src/**/*.{js,ts,jsx,tsx}\"",
+    "preview": "vite preview --port 4173"
   },
   "dependencies": {
     "@google/generative-ai": "^0.2.1",
