@@ -1,0 +1,28 @@
+/* Добавьте этот код в конец вашего src/index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Определение кастомной анимации для плавного появления модального окна.
+  Мы анимируем прозрачность (opacity) и масштаб (transform: scale).
+*/
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 
+  Создаем кастомный класс, который будет использовать нашу анимацию.
+  'forwards' означает, что элемент останется в конечном состоянии анимации (opacity: 1, scale: 1).
+*/
+.animate-scale-in {
+  animation: scale-in 0.2s ease-out forwards;
+}
